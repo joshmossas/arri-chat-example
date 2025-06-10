@@ -19,6 +19,8 @@ export class MessageService {
 
     createMessage(msg: Message) {
         // TODO: store in db somehow
+
+        // notify listeners that a message was created
         this.publishEvent(msg);
     }
 
